@@ -1,0 +1,11 @@
+
+#define MPU9250 0x68
+#define MAG     0x0c
+
+class mpu9250{
+  void init(int fd);
+  void initAK8963();
+  void commad(int code);
+  
+
+    
