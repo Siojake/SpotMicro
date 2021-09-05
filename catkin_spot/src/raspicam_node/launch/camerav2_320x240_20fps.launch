@@ -21,4 +21,5 @@
     <param name="framerate" value="30"/>
   </node>
   <node type="i2cpwm_board" pkg="i2cpwm_board" name="i2cpwm_board" />
+  <node type="spot_i2c_node" pkg="spot_i2c" name="spot_i2c_node" launch-prefix="" />	
 </launch>

@@ -1,3 +1,24 @@
+#ifndef LCD_H
+#define LCD_H
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/ioctl.h>
+#include <fcntl.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <string.h>
+#include <unistd.h>
+#include <wiringPi.h>
+#include <std_msgs/String.h>
+
+
+extern "C" {
+#include <linux/i2c.h>
+#include <linux/i2c-dev.h>
+#include <i2c/smbus.h>
+}
+
+
 
 extern int _controller_io_handle;
 
@@ -18,3 +39,6 @@ public:
   void writeLCD(char * message);
   void init(int fd);
 };
+
+
+#endif
